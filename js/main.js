@@ -31,7 +31,7 @@ function toggleMenu() {
   }
 }
 
-window.onload = function() {
+document.addEventListener("domcontentready", function() {
   var imgArr = document.getElementsByClassName("my__img");
 
   var modalWindow = document.getElementById("my__modal");
@@ -61,4 +61,4 @@ window.onload = function() {
     modalBlock.style.transform = "translateY(-500%)";
     setTimeout(close, 500);
   };
-};
+});
