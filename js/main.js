@@ -31,9 +31,9 @@ function toggleMenu() {
   }
 }
 
-document.addEventListener("domcontentready", function() {
+$("document").ready(function() {
+  console.log("Firing!");
   var imgArr = document.getElementsByClassName("my__img");
-
   var modalWindow = document.getElementById("my__modal");
   var modalImg = document.getElementById("img01");
   var caption = document.getElementById("caption");
